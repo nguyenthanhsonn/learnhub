@@ -24,7 +24,7 @@ const buildDatabaseOptions = (config: {
   password: config.password,
   database: config.database,
   entities: [join(__dirname, '..', '**', '*.entity.{js,ts}')],
-  migrations: [join(__dirname, '..', 'migrations', '*{.js,.ts}')],
+  migrations: [join(__dirname, 'migrations', '*{.js,.ts}')],
   synchronize: toBoolean(config.synchronize),
   logging: toBoolean(config.logging),
 });
